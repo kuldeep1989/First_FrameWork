@@ -24,17 +24,14 @@ public class LoginPageTest extends TestBase {
 			loginPage = new LoginPage();
 		}
 		
-		
 		@Test
 		public void loginTest() {
 			Landingpage = loginPage.login(property.getProperty("Username"), property.getProperty("Password"));
 		}
 		
-		
 		@AfterMethod
 		public void tearDown () {
 			driver.quit();
 		}
-		
 		
 }

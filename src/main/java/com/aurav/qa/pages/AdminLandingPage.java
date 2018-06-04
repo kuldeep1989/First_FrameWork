@@ -24,9 +24,13 @@ public class AdminLandingPage extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void verifyWelcomeMessage()  {
-		driver.get("WelcomeMessage");
+	public String verifyWelcomeMessage()  {
+		return WelcomeMessage.getText();
 	}
 	
+	public UserLandingPage switchtoFront() {
+		Togglelink.click();
+		return new UserLandingPage();
+	} 
 	
 }

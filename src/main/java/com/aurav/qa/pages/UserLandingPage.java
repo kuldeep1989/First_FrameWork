@@ -1,5 +1,9 @@
 package com.aurav.qa.pages;
 
-public class UserLandingPage {
+import com.aurav.qa.base.TestBase;
+
+public class UserLandingPage extends TestBase {
+	
+	
 
 }
